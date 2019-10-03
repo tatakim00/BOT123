@@ -44,9 +44,7 @@ if(message.content == "hug") {
         'https://media.giphy.com/media/CZpro4AZHs436/giphy2.gif',
         'https://media.giphy.com/media/CZpro4AZHs436/giphy3.gif',
         ]
-        message.channel.send(`${message.author} gave ${member} a hug!`, {
-            file: rando_imgs[Math.floor(Math.random() * rando_imgs.length)]
-        });
+        message.channel.send({rando_imgs})
 }});
 
 bot.on('message', message=>{
