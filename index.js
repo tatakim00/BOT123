@@ -1,6 +1,10 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
+function emoji (id){
+    return clientInformation.emojis.get(id).toString ();
+
+}
 client.on('ready',() => {
     console.log("I'm ready to ban!");
 })
