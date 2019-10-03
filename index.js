@@ -31,13 +31,24 @@ bot.on('message', message => {
   bot.on('message', message => {
     if (message.content.startsWith(PREFIX + "aot meme")) {
       const embed = new Discord.RichEmbed()
-      .setImage("https://media2.giphy.com/media/GyChnsTnX8bDi/giphy.gif")
+      .setImage("https://i.imgur.com/H6kfgP7.gif")
       .setFooter("Powered by pinco.il.mago")
       .setTimestamp()
       message.channel.send({embed})
     }
+});
+bot.on('message',message =>{
+if('message' === "hug") {
+    const rando_imgs = [
+        'https://media.giphy.com/media/CZpro4AZHs436/giphy.gif',
+        'https://media.giphy.com/media/CZpro4AZHs436/giphy2.gif',
+        'https://media.giphy.com/media/CZpro4AZHs436/giphy3.gif',
+        ]
+        message.channel.send(`${message.author} gave ${member} a hug!`, {
+            file: rando_imgs[Math.floor(Math.random() * rando_imgs.length)]
+        });
+}});
 
-  });
 bot.on('message', message=>{
     let args = message.content.substring(PREFIX.length).split(" ");
 
