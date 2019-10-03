@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
-const PREFIX ='!';
+const PREFIX ='kk!';
 
 function emoji (id){
     return clientInformation.emojis.get(id).toString ();
