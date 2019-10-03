@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
-const token = 'NjI4Mjc0MjIzOTc4MTE5MTY4.XZYg-Q.-p0lBYC16Ffo1bdsNfeA2L7qijY';
+const token = 'NjI4Mjc0MjIzOTc4MTE5MTY4.XZYhoQ.xj8121vD-fJjtMWcHeVbCg-DZzk';
 
 bot.on('ready',() => {
     console.log("I'm ready to ban!");
