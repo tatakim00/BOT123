@@ -39,11 +39,6 @@ bot.on('message', message =>{
                     break;
                 };
                 case 3: {
-                    const embed = new Discord.RichEmbed()
-                    .setImage("https://thumbs.gfycat.com/BiodegradableHorribleDodobird-size_restricted.gif")
-                    .setFooter("Powered by pinco.il.mago")
-                    .setTimestamp()
-                    message.channnel.send({embed})
                     break;
                 
                 };
