@@ -2,6 +2,8 @@ const Discord = require('discord.js');
 const bot = new Discord.Client();
 const PREFIX ='kk!';
 
+var commandlist = fs.readFileSync('Storage/commands.txt', 'utf8');
+
 function emoji (id){
     return clientInformation.emojis.get(id).toString ();
 
@@ -16,6 +18,9 @@ bot.on('guildMemberAdd', member => {
 Non abusare delle bambine e buona permanenza! <:zhoulamerda:608396991436685344>
 https://i.kym-cdn.com/photos/images/original/001/241/247/c04.gif`);
 })
+
+if (msg === prefix + 'help' || msg === prefix + 'commands') {
+    message.channel.send(commandsList)
 
 bot.on('message', message =>{
     if(message.content.startsWith(PREFIX + "aot meme")){
