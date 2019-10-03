@@ -18,10 +18,14 @@ https://i.kym-cdn.com/photos/images/original/001/241/247/c04.gif`);
 })
 
 bot.on('message', message=>{
-    if(message.content =='aot meme'){
-        const exampleEmbed = new Discord.MessageEmbed()
-        .setImage('https://i.kym-cdn.com/photos/images/original/001/241/247/c04.gif');
-    }message.reply(exampleEmbed);
+    let args = message.content == 'aot meme';
+    switch(args[0]){
+        case "info":
+            var embed = new Discord.MessageEmbed()
+            .setImage('https://i.imgur.com/wSTFkRM.png');
+  message.channel.sendEmbed(embed);
+  break;
+}
 })
 
 bot.on('message', message=>{
