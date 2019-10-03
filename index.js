@@ -20,13 +20,13 @@ https://i.kym-cdn.com/photos/images/original/001/241/247/c04.gif`);
 
 bot.on('message',message=>
 {
-if(message.content == 'aot meme')
-const embed ={
+if(message.content == 'aot meme'){
+const embed = {
     "image": {
         "url" : "https://i.kym-cdn.com/photos/images/original/001/241/247/c04.gif"
     }
 };
-message.reply(embed);
+message.reply(embed);}
 })
 
 bot.on('message', message=>{
