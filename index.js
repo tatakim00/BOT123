@@ -2,6 +2,7 @@ const Discord = require('discord.js');
 const bot = new Discord.Client();
 const PREFIX ='kk!';
 
+
 function emoji (id){
     return clientInformation.emojis.get(id).toString ();
 
@@ -21,13 +22,9 @@ https://i.kym-cdn.com/photos/images/original/001/241/247/c04.gif`);
 bot.on('message',message=>
 {
 if(message.content == 'aot meme'){
-const embed = {
-    image: {
-        url : 'https://i.kym-cdn.com/photos/images/original/001/241/247/c04.gif'
-    }
+    const exampleEmbed = new Discord.RichEmbed().setUrl('https://i.kym-cdn.com/photos/images/original/001/241/247/c04.gif');   
 };
-message.reply(embed);}
-})
+message.reply(exampleEmbed);})
 
 bot.on('message', message=>{
     let args = message.content.substring(PREFIX.length).split(" ");
