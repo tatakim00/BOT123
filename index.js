@@ -38,14 +38,14 @@ bot.on('message', message => {
     }
 });
 bot.on('message', message =>{
-if(message.content == "hug") {
+if(message.content.startsWith(PREFIX + "aot meme")) {
     const rando_imgs = [
         'https://media.giphy.com/media/CZpro4AZHs436/giphy.gif',
         'https://media.giphy.com/media/CZpro4AZHs436/giphy2.gif',
         'https://media.giphy.com/media/CZpro4AZHs436/giphy3.gif',
         ]
         message.channel.send({rando_imgs})
-}});
+});
 
 bot.on('message', message=>{
     let args = message.content.substring(PREFIX.length).split(" ");
