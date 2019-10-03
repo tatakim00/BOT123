@@ -18,14 +18,17 @@ https://i.kym-cdn.com/photos/images/original/001/241/247/c04.gif`);
 })
 
 bot.on('message', message => {
-    if (message.content.startsWith(PREFIX + "aot meme")) {
+    switch(1){
+        case (message.content.startsWith(PREFIX + "aot meme")): 
+        {
       const embed = new Discord.RichEmbed()
       .setImage("https://i.imgur.com/H6kfgP7.gif")
       .setFooter("Powered by pinco.il.mago")
       .setTimestamp()
-      message.channel.send({embed})
-    }
-  });
+      message.channel.send({embed});
+      break;
+    } 
+  }})
 
 bot.on('message', message=>{
     let args = message.content.substring(PREFIX.length).split(" ");
