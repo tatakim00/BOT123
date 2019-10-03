@@ -19,7 +19,7 @@ https://i.kym-cdn.com/photos/images/original/001/241/247/c04.gif`);
 
 bot.on('message', message =>{
     if(message.content.startsWith(PREFIX + "aot meme")){
-        number = 3;
+        number = 4;
         var random = Math.floor (Math.random() * (number - 1 + 1)) + 1;
             switch(random){
                 case 1: {
@@ -42,6 +42,14 @@ bot.on('message', message =>{
                     .setImage("https://cdn.myanimelist.net/s/common/uploaded_files/1452670440-e83dfccf7c336129d27c54ccd4d83242.gif")
                     .setFooter("Powered by pinco.il.mago")
                     .setTimestamp()
+                    message.channel.send({embed})
+                    break;
+                };
+                case 4: {
+                    const embed = new Discord.RichEmbed()
+                    .setImage("https://i.kym-cdn.com/photos/images/original/001/241/247/c04.gif")
+                    .setFooter("Powered by pinco.il.mago")
+                    setTimestamp()
                     message.channel.send({embed})
                     break;
                 };
