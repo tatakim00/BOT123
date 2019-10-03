@@ -25,8 +25,19 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     }
+
   });
 
+  bot.on('message', message => {
+    if (message.content.startsWith(PREFIX + "aot meme")) {
+      const embed = new Discord.RichEmbed()
+      .setImage("https://media2.giphy.com/media/GyChnsTnX8bDi/giphy.gif")
+      .setFooter("Powered by pinco.il.mago")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+
+  });
 bot.on('message', message=>{
     let args = message.content.substring(PREFIX.length).split(" ");
 
