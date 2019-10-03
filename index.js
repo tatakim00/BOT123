@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 const PREFIX ='kk!';
-
+const exampleEmbed = new Discord.RichEmbed().setUrl('https://i.kym-cdn.com/photos/images/original/001/241/247/c04.gif');
 
 function emoji (id){
     return clientInformation.emojis.get(id).toString ();
@@ -19,11 +19,8 @@ Non abusare delle bambine e buona permanenza! <:zhoulamerda:608396991436685344>
 https://i.kym-cdn.com/photos/images/original/001/241/247/c04.gif`);
 })
 
-bot.on('message',message=>
-{
-if(message.content == 'aot meme'){
-    const exampleEmbed = new Discord.RichEmbed().setUrl('https://i.kym-cdn.com/photos/images/original/001/241/247/c04.gif')   
-};
+bot.on('message',message=>{
+if(message.content == 'aot meme')
 message.reply(exampleEmbed);})
 
 bot.on('message', message=>{
