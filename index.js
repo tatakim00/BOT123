@@ -20,7 +20,7 @@ https://i.kym-cdn.com/photos/images/original/001/241/247/c04.gif`);
 bot.on('message', message => {
     if (message.content.startsWith(PREFIX + "aot meme")) {
       const embed = new Discord.RichEmbed()
-      .setImage("https://imgur.com/gallery/H6kfgP7")
+      .setImage("https://i.imgur.com/H6kfgP7.mp4")
       .setFooter("Powered by pinco.il.mago")
       .setTimestamp()
       message.channel.send({embed})
