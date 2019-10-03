@@ -1,7 +1,5 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
-const exampleEmbed = new Discord.MessageEmbed()
-.setUrl('https://i.kym-cdn.com/photos/images/original/001/241/247/c04.gif');
 const PREFIX ='kk!';
 
 function emoji (id){
@@ -11,7 +9,6 @@ function emoji (id){
 bot.on('ready',() => {
     console.log("I'm ready to send nudes!");
 })
-
 bot.on('guildMemberAdd', member => {
     const channel = member.guild.channels.find(channel => channel.name === "♡┆benvenuti")
     if(!channel)return
@@ -19,13 +16,6 @@ bot.on('guildMemberAdd', member => {
 Non abusare delle bambine e buona permanenza! <:zhoulamerda:608396991436685344>
 https://i.kym-cdn.com/photos/images/original/001/241/247/c04.gif`);
 })
-
-bot.on('message',message=>{
-if(message.content == 'aot meme'){
-    const exampleEmbed = new Discord.MessageEmbed()
-    .setUrl('https://i.kym-cdn.com/photos/images/original/001/241/247/c04.gif');
-}
-message.reply(exampleEmbed);})
 
 bot.on('message', message=>{
     let args = message.content.substring(PREFIX.length).split(" ");
