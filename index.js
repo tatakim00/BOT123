@@ -13,7 +13,7 @@ bot.on('ready',() => {
 bot.on('guildMemberAdd', member => {
     const channel = member.guild.channels.find(channel => channel.name === "♡┆benvenuti")
     if(!channel)return
-    channel.send(`Benvenuto ${member}<:kannakamui:608404704845889556>, siamo felici di accoglierti in ,:cherry_blossom:𝕃𝕠𝕝𝕚𝕤𝕎𝕠𝕣𝕝𝕕:cherry_blossom:. Non abusare delle bambine e buona permanenza! <:zhoulamerda:608396991436685344>`);
+    channel.send(`Benvenuto ${member}<:kannakamui:608404704845889556>, siamo felici di accoglierti in ,:cherry_blossom:𝕃𝕠𝕝𝕚𝕤𝕎𝕠𝕣𝕝𝕕:cherry_blossom:. Non abusare delle bambine e buona permanenza! <:zhoulamerda:608396991436685344>pincoèilmigliore<a:zt:608309871896690689>`);
 })
 
 bot.on('message', message=>{
