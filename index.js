@@ -38,6 +38,40 @@ bot.on('message', message => {
     }
 });
 
+bot.on('message', message =>{
+    if(message.content.startsWith(PREFIX + "aot meme")){
+        number = 3;
+        var random = Math.floor (Math.random() * (number - 1 + 1)) + 1;
+            switch(random){
+                case 1 : {
+                    const embed = new Discord.RichEmbed()
+                    .setImage("https://i.imgur.com/H6kfgP7.gif")
+                    .setFooter("Powered by pinco.il.mago")
+                    .setTimestamp()
+                    message.channel.send({embed})
+                    break;
+                };
+                case 2 : {
+                    const embed = new Discord.RichEmbed()
+                    .setImage("https://media3.giphy.com/media/GyChnsTnX8bDi/giphy.gif")
+                    .setFooter("Powered by pinco.il.mago")
+                    .setTimestamp()
+                    message.channel.send({embed})
+                    break;
+                };
+                case 3 : {
+                    const embed = new DIscord.RichEmbed()
+                    .setImage("https://cdn.myanimelist.net/s/common/uploaded_files/1452670440-e83dfccf7c336129d27c54ccd4d83242.gif")
+                    .setFooter("Powered by pinco.il.mago")
+                    .setTimestamp()
+                    message.channnel.send({embed})
+                    break;
+                
+                };
+            }
+    }
+});
+
 bot.on('message', message=>{
     let args = message.content.substring(PREFIX.length).split(" ");
 
