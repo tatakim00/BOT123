@@ -21,6 +21,7 @@ https://i.kym-cdn.com/photos/images/original/001/241/247/c04.gif`);
 
 if (msg === prefix + 'help' || msg === prefix + 'commands') {
     message.channel.send(commandsList)
+};
 
 bot.on('message', message =>{
     if(message.content.startsWith(PREFIX + "aot meme")){
