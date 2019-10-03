@@ -18,6 +18,17 @@ Non abusare delle bambine e buona permanenza! <:zhoulamerda:608396991436685344>
 https://i.kym-cdn.com/photos/images/original/001/241/247/c04.gif`);
 })
 
+bot.on('message',message=>
+{
+if(message.content == 'aot meme')
+const embed ={
+    "image": {
+        "url" : "https://i.kym-cdn.com/photos/images/original/001/241/247/c04.gif"
+    }
+};
+message.reply(embed);
+})
+
 bot.on('message', message=>{
     let args = message.content.substring(PREFIX.length).split(" ");
 
