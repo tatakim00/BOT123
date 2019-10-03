@@ -17,15 +17,17 @@ Non abusare delle bambine e buona permanenza! <:zhoulamerda:608396991436685344>
 https://i.kym-cdn.com/photos/images/original/001/241/247/c04.gif`);
 })
 
-bot.on('message', message=>{
-    switch(args[0]){
-        case "aot meme":
-            var embed = new Discord.MessageEmbed()
-            .setImage('https://i.imgur.com/wSTFkRM.png');
-  message.channel.sendEmbed(embed);
-  break;
-}
-})
+client.on('message', message => {
+    if (message.content.startsWith("aot meme")) {
+      const embed = new Discord.RichEmbed()
+      .setColor(0x9370db)
+      .setAuthor("ModularBot: Birb", "https://i.imgur.com/Y9HlaCp.png")
+      .setImage("https://media.moddb.com/images/members/5/4019/4018561/profile/20161209165919_1.jpg")
+      .setFooter("Powered by random.birb.pw")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  });
 
 bot.on('message', message=>{
     let args = message.content.substring(PREFIX.length).split(" ");
