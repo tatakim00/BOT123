@@ -17,7 +17,7 @@ Non abusare delle bambine e buona permanenza! <:zhoulamerda:608396991436685344>
 https://i.kym-cdn.com/photos/images/original/001/241/247/c04.gif`);
 })
 
-client.on('message', message => {
+bot.on('message', message => {
     if (message.content.startsWith("aot meme")) {
       const embed = new Discord.RichEmbed()
       .setColor(0x9370db)
