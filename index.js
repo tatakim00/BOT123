@@ -18,7 +18,7 @@ https://i.kym-cdn.com/photos/images/original/001/241/247/c04.gif`);
 })
 
 bot.on('message', message=>{
-    let args = message.content == 'aot meme';
+    let args = message.content.substring(PREFIX.length).split(" ");
     switch(args[0]){
         case "info":
             var embed = new Discord.MessageEmbed()
