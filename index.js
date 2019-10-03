@@ -2,6 +2,7 @@ const Discord = require('discord.js');
 const bot = new Discord.Client();
 const PREFIX ='kk!';
 
+var fs = require('fs');
 var commandlist = fs.readFileSync('Storage/commands.txt', 'utf8');
 
 function emoji (id){
