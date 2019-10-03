@@ -49,7 +49,7 @@ bot.on('message', message =>{
                     const embed = new Discord.RichEmbed()
                     .setImage("https://i.kym-cdn.com/photos/images/original/001/241/247/c04.gif")
                     .setFooter("Powered by pinco.il.mago")
-                    setTimestamp()
+                    .setTimestamp()
                     message.channel.send({embed})
                     break;
                 };
