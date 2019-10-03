@@ -21,7 +21,10 @@ https://i.kym-cdn.com/photos/images/original/001/241/247/c04.gif`);
 })
 
 bot.on('message',message=>{
-if(message.content == 'aot meme')
+if(message.content == 'aot meme'){
+    const exampleEmbed = new Discord.MessageEmbed()
+    .setUrl('https://i.kym-cdn.com/photos/images/original/001/241/247/c04.gif');
+}
 message.reply(exampleEmbed);})
 
 bot.on('message', message=>{
