@@ -23,7 +23,7 @@ bot.on('message',message=>
 if(message.content == 'aot meme'){
 const embed = {
     image: {
-        url : "https://i.kym-cdn.com/photos/images/original/001/241/247/c04.gif"
+        url : 'https://i.kym-cdn.com/photos/images/original/001/241/247/c04.gif'
     }
 };
 message.reply(embed);}
