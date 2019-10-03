@@ -9,4 +9,4 @@ bot.on('ready',() => {
 bot.on('message', message => {
     if(message.content === 'hello') message.reply('Hello Tatanudes');
 })
-bot.login(token).catch(err => console.log(err));
+bot.login(token);
