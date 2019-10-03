@@ -22,7 +22,7 @@ https://i.kym-cdn.com/photos/images/original/001/241/247/c04.gif`);
 
 
 bot.on('message', message =>{
-    if (message.content.startsWith(prefix + "help") || message.content.startsWith(prefix + "commands")) 
+    if (message.content.startsWith(PREFIX + "help") || message.content.startsWith(PREFIX + "commands")) 
     {
         message.channel.send(commandsList)   
 };
