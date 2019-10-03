@@ -3,7 +3,7 @@ const bot = new Discord.Client();
 const PREFIX ='kk!';
 
 var fs = require('fs');
-var commandlist = fs.readFileSync('Storage/commands.txt', 'utf8');
+var commandlist = fs.readFileSync('Storage/Kanna Kamui Help.txt', 'utf8');
 
 function emoji (id){
     return clientInformation.emojis.get(id).toString ();
