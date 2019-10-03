@@ -39,7 +39,7 @@ bot.on('message', message =>{
                     break;
                 };
                 case 3: {
-                    const embed = new DIscord.RichEmbed()
+                    const embed = new Discord.RichEmbed()
                     .setImage("https://cdn.myanimelist.net/s/common/uploaded_files/1452670440-e83dfccf7c336129d27c54ccd4d83242.gif")
                     .setFooter("Powered by pinco.il.mago")
                     .setTimestamp()
