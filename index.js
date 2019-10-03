@@ -28,16 +28,6 @@ bot.on('message', message => {
 
   });
 
-  bot.on('message', message => {
-    if (message.content.startsWith(PREFIX + "aot meme")) {
-      const embed = new Discord.RichEmbed()
-      .setImage("https://i.imgur.com/H6kfgP7.gif")
-      .setFooter("Powered by pinco.il.mago")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-});
-
 bot.on('message', message =>{
     if(message.content.startsWith(PREFIX + "aot meme")){
         number = 3;
