@@ -10,6 +10,6 @@ client.on('ready',() => {
 })
 
 client.on('message', message => {
-    if(message.content === 'hello') message.reply('Hello Tatanudes');
+    if(message.content === 'hello') message.reply('Hello Tatanudes :zhoulamerda:');
 })
 client.login(process.env.BOT_TOKEN);
