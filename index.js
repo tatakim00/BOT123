@@ -37,8 +37,8 @@ bot.on('message', message => {
       message.channel.send({embed})
     }
 });
-bot.on('message',message =>{
-if('message' === "hug") {
+bot.on('message', message =>{
+if(message.content == "hug") {
     const rando_imgs = [
         'https://media.giphy.com/media/CZpro4AZHs436/giphy.gif',
         'https://media.giphy.com/media/CZpro4AZHs436/giphy2.gif',
