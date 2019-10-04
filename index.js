@@ -28,7 +28,7 @@ bot.on('message', message =>{
     {
         const embed = new Discord.RichEmbed()
         .setDescription(commandlist)
-        message.channel.send({embed})   
+        message.channel.send(embed)   
 };
 });
 
