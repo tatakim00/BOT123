@@ -53,7 +53,7 @@ bot.on('message', message =>{
         'https://i.kym-cdn.com/photos/images/newsfeed/001/131/532/71d.png',
         'https://i.imgur.com/fqXUlkc.gif',
         'https://data.whicdn.com/images/212845263/original.gif',
-        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAryzNCyNrYv4UFPpcpg_pFQp9HLARnzKZenYI6CZ9IggvN4wu',
+        'https://66.media.tumblr.com/49db575ffcab064198fa0dd006ac7038/tumblr_ook968xrUc1w8pxjzo1_400.gifv',
         'http://37.media.tumblr.com/c48924c62d16c191260166a30ae394e7/tumblr_n48hezByEP1sg146vo1_250.gif ',
         'https://i.kym-cdn.com/photos/images/newsfeed/000/586/078/d61.gif']
     
@@ -95,19 +95,50 @@ bot.on('message', message =>{
         const Array=['https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ6H3LdGwK2xWzbw8nnQfUXgrsQPYzU1omv6RltOaHVDnbVprRBQ',
     'https://media0.giphy.com/media/WcEvIajIk332g/giphy.gif',
 'http://pa1.narvii.com/6518/be1713884a76ccad3fba3b6ab2f1d7e825be1e09_hq.gif',
-'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9LJHtNbZB_QxEZxqy5kErQiZFfJkaOw0BtYyNBtc7cU1pYxt9',
-'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw7IZ9RcmFN2lA0VxkNF_qfMq9DVXHS9DGyq6VpoalCXcJw3AvWw',
+'https://media.giphy.com/media/NRVCgNCn52SAg/giphy.gif',
+'https://i.imgur.com/8gzGyA8.gif',
 'https://78.media.tumblr.com/59d50dd40e77c1f6b56de7a6b0b4d706/tumblr_omvtee2v7J1smw5dno1_640.gif',
 'https://i.pinimg.com/originals/0f/22/89/0f2289dbc014468d3c9538a22586c68d.gif',
 'https://media1.tenor.com/images/27cca72328a67a9a4be7210faaf3c380/tenor.gif?itemid=14364933',
-'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIP5DkLQ25sVt4ED0yxsTDW5iO3sOq3g9zGqNspLoj0jAepMT6',
+'https://media1.tenor.com/images/27cca72328a67a9a4be7210faaf3c380/tenor.gif?itemid=14364933',
 'https://66.media.tumblr.com/da2641bdf6a65f15f9fd348695ce5985/tumblr_pc8fdmWPUK1xuvhj0o7_250.gifv',
 'https://78.media.tumblr.com/e57006b59e602501dcc17db8eafd056a/tumblr_okpm9aNK4V1v8jcbro1_500.gif',
-'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd4ArxTjbY-fP9o8vR86GLZm16_jBFpcArt-97eGkF9O-owfxXEw',
+'https://78.media.tumblr.com/e57006b59e602501dcc17db8eafd056a/tumblr_okpm9aNK4V1v8jcbro1_500.gif',
 'https://steamuserimages-a.akamaihd.net/ugc/857222376538740034/B20C9D65A55495FB832BCA077F1FF12D828C297B/',
 'https://media.tenor.com/images/4fbd3ed28b84782922b6d92257b900bf/tenor.gif',
-'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWyH8bGtqA5UFH6gyp4rdl1LSffKH3r51APsaqEOt73zIagBBOhQ',
-'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpgFEZGFRvdLw5iKPB5qysHOVI7Z0CKGlfm7crYl_4ajPQOfZJeg',
+'https://media0.giphy.com/media/7emmvIS55aOT6/giphy.gif',
+'https://66.media.tumblr.com/95213606b8ecc023e9823ee7e7a382f1/tumblr_opujjc3TQZ1vpo36po8_400.gifv',
+]
+
+const embed = new Discord.RichEmbed()
+                    .setImage(Array[random])
+                    .setFooter('Powered by pinco.il.mago')
+                    .setTimestamp()
+                    message.channel.send(embed)
+    }
+    if(message.content.startsWith(PREFIX + "loli")){
+        number = 20;
+        var random = Math.floor(Math.random()*(number));
+        const Array=['https://media3.giphy.com/media/gUvLYSSMguiSk/source.gif',
+    'https://media.giphy.com/media/O38XJW2fOclCo/giphy.gif',
+'https://steamuserimages-a.akamaihd.net/ugc/32981755975008833/5BFAC28E6DEF1447D55455ECB7E2B60B303614CE/',
+'https://gifimage.net/wp-content/uploads/2017/09/anime-loli-gif-9.gif',
+'https://data.whicdn.com/images/60403350/original.gif',
+'https://media2.giphy.com/media/lop8rMAJv0VfG/source.gif',
+'https://pa1.narvii.com/6108/f3518e0f4f59932a96458d3ae1fe7a38cddfcaed_hq.gif',
+'https://thumbs.gfycat.com/ClassicExcellentDuck-size_restricted.gif',
+'https://i.pinimg.com/originals/52/c4/d5/52c4d55c27725df1b0a35178ad7cbc08.gif',
+'https://image.myanimelist.net/ui/G-Sm6d0qIwQxUGHIp-m2WGWUJGNTIW4Mae6mbs6M4hHetQ6LacRU6lYM4YoDmdWBybpMWCw0JuU2f4t5gB5Y2-3yQljU29RZATu9-mV2UjgFw-ULAMTsm1eueeD8i8I-',
+'http://cdn.lowgif.com/full/84514ebca112b7aa-why-lolis-anime-related-disqus.gif',
+'https://i.pinimg.com/originals/94/ff/51/94ff51793ab56ddcd846096044823924.gif',
+'http://giphygifs.s3.amazonaws.com/media/jUg8D7Yy0Qi4w/giphy.gif',
+'https://i.pinimg.com/originals/67/01/e2/6701e20a1cfe0233294d8a668206add7.gif',
+'https://i.pinimg.com/originals/79/20/1d/79201dca73519acbc259591fabbc2dc3.gif',
+'https://i.imgur.com/VUuoZfa.gif?noredirect',
+'https://media1.tenor.com/images/6125c9e6fb1dbb4fd23cf6db578702da/tenor.gif?itemid=14065051',
+'https://media1.tenor.com/images/3102194c3ee2124d988a167dc4e79a0d/tenor.gif?itemid=10993798',
+'https://steamuserimages-a.akamaihd.net/ugc/854974895409495071/171225AFD44336CA1DE09A855750F677E4434E19/',
+'https://data.whicdn.com/images/291726305/original.gif'
 ]
 
 const embed = new Discord.RichEmbed()
