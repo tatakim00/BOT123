@@ -4,7 +4,7 @@ const PREFIX ='kk!';
 
 var fs = require('fs');
 var commandlist = fs.readFileSync('Kanna Kamui Help.txt', 'utf8');
-var meme = fs.readFileSynch('meme.txt', 'utf8');
+var meme = fs.readFileSync('meme.txt', 'utf8');
 function emoji (id) { return clientInformation.emojis.get(id).toString (); }
 
 bot.on('ready',() => { console.log("I'm ready to send nudes!"); } )
