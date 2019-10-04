@@ -65,7 +65,6 @@ bot.on('message', message =>{
         const embed = new Discord.RichEmbed()
                     .setImage(ArrayGif[random])
                     .setFooter("Powered by pinco.il.mago")
-                    .setTimestamp()
                     message.channel.send({embed})
 
             /*switch(random){
