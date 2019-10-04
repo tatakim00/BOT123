@@ -27,7 +27,10 @@ bot.on('message', message =>{
     if (message.content.startsWith(PREFIX + "help") || message.content.startsWith(PREFIX + "commands")) 
     {
         const embed = new Discord.RichEmbed()
+        .setColor('#6D466B')
+        .setTitle('Comandi')
         .setDescription(commandlist)
+        .setFooter("Powered by pinco.il.mago")
         message.channel.send(embed)   
 };
 });
