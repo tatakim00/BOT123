@@ -70,13 +70,4 @@ bot.on('message', message =>{
     }
 });
 
-
-bot.on('message', message=>{
-    let args = message.content.substring(PREFIX.length).split(" ");
-
-    switch(args[0]){
-        case 'play':console.log("I'm ready to send Apple!")
-        break ;
-    }
-})
 bot.login(process.env.BOT_TOKEN);
