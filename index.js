@@ -4,14 +4,11 @@ const PREFIX ='kk!';
 
 var fs = require('fs');
 var commandlist = fs.readFileSync('Kanna Kamui Help.txt', 'utf8');
+var meme = fs.readFileSynch('meme.txt', 'utf8');
+function emoji (id) { return clientInformation.emojis.get(id).toString (); }
 
-function emoji (id){
-    return clientInformation.emojis.get(id).toString ();
+bot.on('ready',() => { console.log("I'm ready to send nudes!"); } )
 
-}
-bot.on('ready',() => {
-    console.log("I'm ready to send nudes!");
-})
 bot.on('guildMemberAdd', member => {
     const channel = member.guild.channels.find(channel => channel.name === "♡┆benvenuti")
     if(!channel)return
@@ -40,33 +37,19 @@ bot.on('message', message =>{
         number = 20;
         var random = Math.floor (Math.random() * (number));
         
-        const ArrayGif =[
-        'https://i.imgur.com/H6kfgP7.gif',
-        'https://media3.giphy.com/media/GyChnsTnX8bDi/giphy.gif',
-        'https://cdn.myanimelist.net/s/common/uploaded_files/1452670440-e83dfccf7c336129d27c54ccd4d83242.gif',
-        'https://i.kym-cdn.com/photos/images/original/001/241/247/c04.gif',
-        'http://25.media.tumblr.com/7a30e9bf8a4eba2cf1f466de90f82471/tumblr_ms3dt2Hz5A1rzjb4go1_500.gif',
-        'https://media0.giphy.com/media/xNqHay7nIhWoM/giphy.gif',
-        'http://25.media.tumblr.com/7a30e9bf8a4eba2cf1f466de90f82471/tumblr_ms3dt2Hz5A1rzjb4go1_500.gif',
-        'https://i.imgflip.com/2rg19t.jpg',
-        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaEKeP6hnhmI5AJucOjB-cJ_3hIfqHAlOI0x149nvc2kI-7E08',
-        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqaWeI8pJrOFcO-EHygFDmnJkYBKcB0QZi6WgikJp2ziG_7KUu5Q',
-        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4OLnljxg7uezdx3t1UDSgezvtINwBl5_WtVs0F1q1ioKK_JAQ5A',
-        'https://i.kym-cdn.com/photos/images/newsfeed/000/641/238/b99.jpg',
-        'https://i.kym-cdn.com/photos/images/original/000/586/391/df3.jpg',
-        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_I5It5BQK4PNfcGqxjVvoLhxWihi1itME-I8nOzrUvEH8LLNC',
-        'https://i.kym-cdn.com/photos/images/newsfeed/001/131/532/71d.png',
-        'https://i.imgur.com/fqXUlkc.gif',
-        'https://data.whicdn.com/images/212845263/original.gif',
-        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAryzNCyNrYv4UFPpcpg_pFQp9HLARnzKZenYI6CZ9IggvN4wu',
-        'http://37.media.tumblr.com/c48924c62d16c191260166a30ae394e7/tumblr_n48hezByEP1sg146vo1_250.gif',
-        'https://i.kym-cdn.com/photos/images/newsfeed/000/586/078/d61.gif']/*= new String (random);*/
+        /*= new String (random);*/
         
         const embed = new Discord.RichEmbed()
-                    .setImage(ArrayGif[random])
+                    .setImage(meme[random])
                     .setFooter('Powered by pinco.il.mago')
                     .setTimestamp()
                     message.channel.send(embed)
+    }
+    if(message.content.startsWith(PREFIX + "fuoco")){
+        number = 7;
+        var random = Math.floor(Math.random()*(number));
+        const ArrayGif=['https://media1.giphy.com/media/yRnA9pPlLZOY8/source.gif',
+        'https://mondogif.altervista.org/wp-content/uploads/2017/10/%E2%80%9CQuesta-%C3%A8-benzina-io-mi-d%C3%B2-fuoco%E2%80%9D-in-GIF-animata-2.gif']
     }
 });
 
