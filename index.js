@@ -36,7 +36,7 @@ bot.on('message', message =>{
     if(message.content.startsWith(PREFIX + "aot meme")){
         number = 20;
         var random = Math.floor (Math.random() * (number));
-        var Array = ['https://i.imgur.com/H6kfgP7.gif',
+        const Array = ['https://i.imgur.com/H6kfgP7.gif',
         'https://media3.giphy.com/media/GyChnsTnX8bDi/giphy.gif',
         'https://cdn.myanimelist.net/s/common/uploaded_files/1452670440-e83dfccf7c336129d27c54ccd4d83242.gif',
         'https://i.kym-cdn.com/photos/images/original/001/241/247/c04.gif',
@@ -59,7 +59,7 @@ bot.on('message', message =>{
     
         
         const embed = new Discord.RichEmbed()
-                    .setImage(array[random])
+                    .setImage(Array[random])
                     .setFooter('Powered by pinco.il.mago')
                     .setTimestamp()
                     message.channel.send(embed)
