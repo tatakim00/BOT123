@@ -67,8 +67,19 @@ bot.on('message', message =>{
     if(message.content.startsWith(PREFIX + "fuoco")){
         number = 7;
         var random = Math.floor(Math.random()*(number));
-        const ArrayGif=['https://media1.giphy.com/media/yRnA9pPlLZOY8/source.gif',
-        'https://mondogif.altervista.org/wp-content/uploads/2017/10/%E2%80%9CQuesta-%C3%A8-benzina-io-mi-d%C3%B2-fuoco%E2%80%9D-in-GIF-animata-2.gif']
+        const Array=['https://media1.giphy.com/media/yRnA9pPlLZOY8/source.gif',
+        'https://mondogif.altervista.org/wp-content/uploads/2017/10/%E2%80%9CQuesta-%C3%A8-benzina-io-mi-d%C3%B2-fuoco%E2%80%9D-in-GIF-animata-2.gif',
+    'https://www.gifmania.it/Gif-Animate-Manga-Anime/Immagini-Animate-Pokemon/Gif-Animati-Pokemon-Di-Fuoco/Magmar/Magmar-81925.gif',
+'https://instagram.ffra1-1.fna.fbcdn.net/v/t51.2885-15/e35/54512199_2526952367376308_3091587691246637381_n.jpg?_nc_ht=instagram.ffra1-1.fna.fbcdn.net&se=8&oh=a4e0538d7c6e307e4c5f09561a021bc9&oe=5E0F7900&ig_cache_key=MjAxNDcwMzU1MTQ4NTY0NzE4MA%3D%3D.2',
+'https://cdn-img-n.facciabuco.com/14/q40w68dpkv-quando-ti-stai-facendo-un-toast-ma-mandi-a-fuoco-la-cattedrale_a.jpg',
+'https://scontent-frx5-1.cdninstagram.com/vp/b618f2b26ffd0e2d7e7fbf2967dcfbfb/5DA6A59E/t51.2885-15/e35/64794869_312903036133016_3031424548634999424_n.jpg?_nc_ht=scontent-frx5-1.cdninstagram.com&se=8&ig_cache_key=MjA4MzQ1OTg5MDk5NTA2OTk4Mw%3D%3D.2',
+'https://media.comicbook.com/2018/12/black-clover-asta-1150891-1280x0.jpeg']
+
+                const embed = new Discord.RichEmbed()
+                    .setImage(Array[random])
+                    .setFooter('Powered by pinco.il.mago')
+                    .setTimestamp()
+                    message.channel.send(embed)
     }
 });
 
