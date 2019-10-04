@@ -81,6 +81,41 @@ bot.on('message', message =>{
                     .setTimestamp()
                     message.channel.send(embed)
     }
+    if(message.content.startsWith(PREFIX + "tata")){
+        const embed = new Discord.RichEmbed()
+            .setImage('https://scontent-frt3-1.cdninstagram.com/v/t51.2885-15/e35/c4.0.1432.1432a/s320x320/70424516_390508398296924_6050714930377840220_n.jpg?_nc_ht=scontent-frt3-1.cdninstagram.com&_nc_cat=108&oh=c733683c46c572c5dccfd04195d33760&oe=5E0FF38D&ig_cache_key=MjEyOTc3NjIwMDgwNDY5OTg0OQ%3D%3D.2.c')
+            .setFooter('Powered by pinco.il.mago')
+            .setTimestamp()
+            message.channel.send(embed)
+
+    }
+    if(message.content.startsWith(PREFIX + "kanna kamui")){
+        number = 16;
+        var random = Math.floor(Math.random()*(number));
+        const Array=['https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ6H3LdGwK2xWzbw8nnQfUXgrsQPYzU1omv6RltOaHVDnbVprRBQ',
+    'https://media0.giphy.com/media/WcEvIajIk332g/giphy.gif',
+'http://pa1.narvii.com/6518/be1713884a76ccad3fba3b6ab2f1d7e825be1e09_hq.gif',
+'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9LJHtNbZB_QxEZxqy5kErQiZFfJkaOw0BtYyNBtc7cU1pYxt9',
+'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw7IZ9RcmFN2lA0VxkNF_qfMq9DVXHS9DGyq6VpoalCXcJw3AvWw',
+'https://78.media.tumblr.com/59d50dd40e77c1f6b56de7a6b0b4d706/tumblr_omvtee2v7J1smw5dno1_640.gif',
+'https://i.pinimg.com/originals/0f/22/89/0f2289dbc014468d3c9538a22586c68d.gif',
+'https://media1.tenor.com/images/27cca72328a67a9a4be7210faaf3c380/tenor.gif?itemid=14364933',
+'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIP5DkLQ25sVt4ED0yxsTDW5iO3sOq3g9zGqNspLoj0jAepMT6',
+'https://66.media.tumblr.com/da2641bdf6a65f15f9fd348695ce5985/tumblr_pc8fdmWPUK1xuvhj0o7_250.gifv',
+'https://78.media.tumblr.com/e57006b59e602501dcc17db8eafd056a/tumblr_okpm9aNK4V1v8jcbro1_500.gif',
+'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd4ArxTjbY-fP9o8vR86GLZm16_jBFpcArt-97eGkF9O-owfxXEw',
+'https://steamuserimages-a.akamaihd.net/ugc/857222376538740034/B20C9D65A55495FB832BCA077F1FF12D828C297B/',
+'https://media.tenor.com/images/4fbd3ed28b84782922b6d92257b900bf/tenor.gif',
+'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWyH8bGtqA5UFH6gyp4rdl1LSffKH3r51APsaqEOt73zIagBBOhQ',
+'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpgFEZGFRvdLw5iKPB5qysHOVI7Z0CKGlfm7crYl_4ajPQOfZJeg',
+]
+
+const embed = new Discord.RichEmbed()
+                    .setImage(Array[random])
+                    .setFooter('Powered by pinco.il.mago')
+                    .setTimestamp()
+                    message.channel.send(embed)
+    }
 });
 
 bot.login(process.env.BOT_TOKEN);
