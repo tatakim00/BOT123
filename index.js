@@ -26,7 +26,9 @@ const embed = new Discord.RichEmbed()
 bot.on('message', message =>{
     if (message.content.startsWith(PREFIX + "help") || message.content.startsWith(PREFIX + "commands")) 
     {
-        message.channel.send(commandlist)   
+        const embed = new Discord.RichEmbed()
+        .setDescription(commandlist)
+        message.channel.send({embed})   
 };
 });
 
