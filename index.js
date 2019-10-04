@@ -28,7 +28,7 @@ bot.on('message', message =>{
     {
         const embed = new Discord.RichEmbed()
         .setColor('#6D466B')
-        .setTitle('Comandi')
+        .setTitle('**Comandi**')
         .setDescription(commandlist)
         .setFooter("Powered by pinco.il.mago")
         message.channel.send(embed)   
