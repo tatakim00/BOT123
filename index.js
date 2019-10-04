@@ -38,8 +38,37 @@ bot.on('message', message =>{
 bot.on('message', message =>{
     if(message.content.startsWith(PREFIX + "aot meme")){
         number = 20;
-        var random = Math.floor (Math.random() * (number - 1 + 1)) + 1;
-            switch(random){
+        var random = Math.floor (Math.random() * (number)) + 1;
+        
+        var ArrayGif =(
+        "https://i.imgur.com/H6kfgP7.gif",
+        "https://media3.giphy.com/media/GyChnsTnX8bDi/giphy.gif",
+        "https://cdn.myanimelist.net/s/common/uploaded_files/1452670440-e83dfccf7c336129d27c54ccd4d83242.gif",
+        "https://i.kym-cdn.com/photos/images/original/001/241/247/c04.gif",
+        "http://25.media.tumblr.com/7a30e9bf8a4eba2cf1f466de90f82471/tumblr_ms3dt2Hz5A1rzjb4go1_500.gif",
+        "https://media0.giphy.com/media/xNqHay7nIhWoM/giphy.gif",
+        "http://25.media.tumblr.com/7a30e9bf8a4eba2cf1f466de90f82471/tumblr_ms3dt2Hz5A1rzjb4go1_500.gif",
+        "https://i.imgflip.com/2rg19t.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaEKeP6hnhmI5AJucOjB-cJ_3hIfqHAlOI0x149nvc2kI-7E08",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqaWeI8pJrOFcO-EHygFDmnJkYBKcB0QZi6WgikJp2ziG_7KUu5Q",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4OLnljxg7uezdx3t1UDSgezvtINwBl5_WtVs0F1q1ioKK_JAQ5A",
+        "https://i.kym-cdn.com/photos/images/newsfeed/000/641/238/b99.jpg",
+        "https://i.kym-cdn.com/photos/images/original/000/586/391/df3.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_I5It5BQK4PNfcGqxjVvoLhxWihi1itME-I8nOzrUvEH8LLNC",
+        "https://i.kym-cdn.com/photos/images/newsfeed/001/131/532/71d.png",
+        "https://i.imgur.com/fqXUlkc.gif",
+        "https://data.whicdn.com/images/212845263/original.gif",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAryzNCyNrYv4UFPpcpg_pFQp9HLARnzKZenYI6CZ9IggvN4wu",
+        "http://37.media.tumblr.com/c48924c62d16c191260166a30ae394e7/tumblr_n48hezByEP1sg146vo1_250.gif",
+        "https://i.kym-cdn.com/photos/images/newsfeed/000/586/078/d61.gif");/*= new String (random);*/
+        
+        const embed = new Discord.RichEmbed()
+                    .setImage(ArrayGif[random])
+                    .setFooter("Powered by pinco.il.mago")
+                    .setTimestamp()
+                    message.channel.send({embed})
+
+            /*switch(random){
                 case 1: {
                     const embed = new Discord.RichEmbed()
                     .setImage("https://i.imgur.com/H6kfgP7.gif")
@@ -199,9 +228,10 @@ bot.on('message', message =>{
                     message.channel.send({embed})
                     break; 
                 }
-            }
+            }*/
     }
 });
+
 
 bot.on('message', message=>{
     let args = message.content.substring(PREFIX.length).split(" ");
