@@ -40,7 +40,7 @@ bot.on('message', message =>{
         number = 20;
         var random = Math.floor (Math.random() * (number));
         
-        var ArrayGif =(
+        const ArrayGif =[
         'https://i.imgur.com/H6kfgP7.gif',
         'https://media3.giphy.com/media/GyChnsTnX8bDi/giphy.gif',
         'https://cdn.myanimelist.net/s/common/uploaded_files/1452670440-e83dfccf7c336129d27c54ccd4d83242.gif',
@@ -60,7 +60,7 @@ bot.on('message', message =>{
         'https://data.whicdn.com/images/212845263/original.gif',
         'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAryzNCyNrYv4UFPpcpg_pFQp9HLARnzKZenYI6CZ9IggvN4wu',
         'http://37.media.tumblr.com/c48924c62d16c191260166a30ae394e7/tumblr_n48hezByEP1sg146vo1_250.gif',
-        'https://i.kym-cdn.com/photos/images/newsfeed/000/586/078/d61.gif');/*= new String (random);*/
+        'https://i.kym-cdn.com/photos/images/newsfeed/000/586/078/d61.gif']/*= new String (random);*/
         
         const embed = new Discord.RichEmbed()
                     .setImage(ArrayGif[random])
