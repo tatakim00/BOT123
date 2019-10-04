@@ -19,7 +19,7 @@ bot.on('guildMemberAdd', member => {
 Non abusare delle bambine e buona permanenza! <:zhoulamerda:608396991436685344>`);
 const embed = new Discord.RichEmbed()
                     .setImage("https://i.kym-cdn.com/photos/images/original/001/241/247/c04.gif")
-                    message.channel.send({embed})
+                    channel.send({embed})
 });
 
 
