@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
-const PREFIX ='kk!';
+const PREFIX ='K!';
 
 var fs = require('fs');
 var commandlist = fs.readFileSync('Kanna Kamui Help.txt', 'utf8');
@@ -65,7 +65,7 @@ bot.on('message', message =>{
                     message.channel.send(embed)
     }
     if(message.content.startsWith(PREFIX + "fuoco")){
-        number = 7;
+        number = 9;
         var random = Math.floor(Math.random()*(number));
         const Array=['https://media1.giphy.com/media/yRnA9pPlLZOY8/source.gif',
         'https://mondogif.altervista.org/wp-content/uploads/2017/10/%E2%80%9CQuesta-%C3%A8-benzina-io-mi-d%C3%B2-fuoco%E2%80%9D-in-GIF-animata-2.gif',
@@ -73,7 +73,9 @@ bot.on('message', message =>{
 'https://instagram.ffra1-1.fna.fbcdn.net/v/t51.2885-15/e35/54512199_2526952367376308_3091587691246637381_n.jpg?_nc_ht=instagram.ffra1-1.fna.fbcdn.net&se=8&oh=a4e0538d7c6e307e4c5f09561a021bc9&oe=5E0F7900&ig_cache_key=MjAxNDcwMzU1MTQ4NTY0NzE4MA%3D%3D.2',
 'https://cdn-img-n.facciabuco.com/14/q40w68dpkv-quando-ti-stai-facendo-un-toast-ma-mandi-a-fuoco-la-cattedrale_a.jpg',
 'https://scontent-frx5-1.cdninstagram.com/vp/b618f2b26ffd0e2d7e7fbf2967dcfbfb/5DA6A59E/t51.2885-15/e35/64794869_312903036133016_3031424548634999424_n.jpg?_nc_ht=scontent-frx5-1.cdninstagram.com&se=8&ig_cache_key=MjA4MzQ1OTg5MDk5NTA2OTk4Mw%3D%3D.2',
-'https://media.comicbook.com/2018/12/black-clover-asta-1150891-1280x0.jpeg']
+'https://media.comicbook.com/2018/12/black-clover-asta-1150891-1280x0.jpeg',
+'https://gifimage.net/wp-content/uploads/2017/11/fuoco-gif-6.gif',
+'https://media.giphy.com/media/PBcodKXWrDfMI/giphy.gif']
 
                 const embed = new Discord.RichEmbed()
                     .setImage(Array[random])
@@ -90,7 +92,7 @@ bot.on('message', message =>{
 
     }
     if(message.content.startsWith(PREFIX + "kanna kamui")){
-        number = 16;
+        number = 19;
         var random = Math.floor(Math.random()*(number));
         const Array=['https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ6H3LdGwK2xWzbw8nnQfUXgrsQPYzU1omv6RltOaHVDnbVprRBQ',
     'https://media0.giphy.com/media/WcEvIajIk332g/giphy.gif',
@@ -99,15 +101,18 @@ bot.on('message', message =>{
 'https://i.imgur.com/8gzGyA8.gif',
 'https://78.media.tumblr.com/59d50dd40e77c1f6b56de7a6b0b4d706/tumblr_omvtee2v7J1smw5dno1_640.gif',
 'https://i.pinimg.com/originals/0f/22/89/0f2289dbc014468d3c9538a22586c68d.gif',
-'https://media1.tenor.com/images/27cca72328a67a9a4be7210faaf3c380/tenor.gif?itemid=14364933',
-'https://media1.tenor.com/images/27cca72328a67a9a4be7210faaf3c380/tenor.gif?itemid=14364933',
 'https://66.media.tumblr.com/da2641bdf6a65f15f9fd348695ce5985/tumblr_pc8fdmWPUK1xuvhj0o7_250.gifv',
 'https://78.media.tumblr.com/e57006b59e602501dcc17db8eafd056a/tumblr_okpm9aNK4V1v8jcbro1_500.gif',
 'https://78.media.tumblr.com/e57006b59e602501dcc17db8eafd056a/tumblr_okpm9aNK4V1v8jcbro1_500.gif',
-'https://steamuserimages-a.akamaihd.net/ugc/857222376538740034/B20C9D65A55495FB832BCA077F1FF12D828C297B/',
 'https://media.tenor.com/images/4fbd3ed28b84782922b6d92257b900bf/tenor.gif',
 'https://media0.giphy.com/media/7emmvIS55aOT6/giphy.gif',
 'https://66.media.tumblr.com/95213606b8ecc023e9823ee7e7a382f1/tumblr_opujjc3TQZ1vpo36po8_400.gifv',
+'https://i.pinimg.com/originals/6b/16/d6/6b16d670971e5a526533e396760f0906.gif',
+'https://media2.giphy.com/media/l0IyjCRcRa6pQo2S4/giphy.gif',
+'https://data.whicdn.com/images/302451982/original.gif',
+'https://data.whicdn.com/images/301024732/original.gif',
+'http://i.imgur.com/iNMXaRM.gif',
+'https://66.media.tumblr.com/e9b45921359339d1312aee012b3cfc46/tumblr_pc8f63GCpZ1xuvhj0o9_250.gifv',
 ]
 
 const embed = new Discord.RichEmbed()
@@ -147,6 +152,31 @@ const embed = new Discord.RichEmbed()
                     .setTimestamp()
                     message.channel.send(embed)
     }
+    if(message.content.startsWith(PREFIX + "bestemmie")){
+        number = 14;
+        var random = Math.floor (Math.random() * (number));
+        const Array = ['https://media.tenor.com/images/d0137141bd1fbd6302afdf1c3f28e2ca/tenor.gif',
+    'https://media1.tenor.com/images/d54a7b23ffe6dcb5aafd7c3674609ceb/tenor.gif',
+'https://66.media.tumblr.com/cdd2bac16baf74e352a064c7500f9034/tumblr_pkmf9goxbl1tw0kwco3_500.gif',
+'https://i.imgur.com/Shr4Bay.png',
+'https://pics.me.me/quando-dalfondo-della-classe-parte-unagaradi-bestemmie-oformio-enessunoti-hainvitato-14945421.png',
+'https://media0.giphy.com/media/ZwNfqKtZZoCE8/source.gif',
+'https://dok7xy59qfw9h.cloudfront.net/506/137/717/100003009-1r2s7kh-h7ih6111nlho0p0/original/file.jpg',
+'https://media.makeameme.org/created/bestemmie-bestemmie-in.jpg',
+'https://scontent-lhr3-1.cdninstagram.com/v/t51.2885-15/e35/55952396_473050363235158_6935712941371556543_n.jpg?_nc_ht=scontent-lhr3-1.cdninstagram.com&oh=32604f90035631a60e0b322a9ede8f88&oe=5E158BF9&ig_cache_key=MjAyNDI0OTI5MDIzMjA3NTkyNA%3D%3D.2',
+'https://www.memecreator.org/static/images/memes/4612976.jpg',
+'http://www.isarcastici4.it/immagini/umorismo/motu_masters_of_the_universe_memes/motu_meme_ita_bestemmia_orko_dio_creazione_michelangelo.jpg',
+'https://dok7xy59qfw9h.cloudfront.net/881/026/954/710003014-1qp0t58-60e037coqrdk22f/original/file.jpg',
+'https://i.ytimg.com/vi/1Q5F_S6xiAU/maxresdefault.jpg',
+'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRQClbsOzW16xPmtHyxJdg243ua9aZg9XCxigbICF7mhvmEowrmQ']
+
+const embed = new Discord.RichEmbed()
+                    .setImage(Array[random])
+                    .setFooter('Powered by pinco.il.mago')
+                    .setTimestamp()
+                    message.channel.send(embed)
+    }
+    
 });
 
 bot.login(process.env.BOT_TOKEN);
