@@ -34,6 +34,8 @@ bot.on('message', message =>{
 
 bot.on('message', message=>{
     if(message.content.startsWith(PREFIX + "fuoco")){
+        number=2;
+        var random = Math.floor (Math.random() * (number));
         const embed = new Discord.RichEmbed()
         .setImage(meme)
         message.channel.send(embed)
