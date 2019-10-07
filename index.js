@@ -39,6 +39,14 @@ bot.on('message', message=>{
         message.channel.send(embed)
     }
 })
+bot.on('message', message=>{
+    if(message.content.startsWith(PREFIX + "aot meme")){
+        const embed = new Discord.RichEmbed()
+        .setImage(meme)
+        message.channel.send(embed)
+    }
+})
+
 
 bot.on('message', message =>{
     if(message.content.startsWith(PREFIX + "aot meme")){
