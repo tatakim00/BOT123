@@ -32,6 +32,14 @@ bot.on('message', message =>{
 };
 });
 
+bot.on('message', message=>{
+    if(message.content.startsWith(PREFIX + "fuoco")){
+        const embed = new Discord.RichEmbed()
+        .setImage(meme)
+        message.channel.send(embed)
+    }
+})
+
 bot.on('message', message =>{
     if(message.content.startsWith(PREFIX + "aot meme")){
         number = 20;
