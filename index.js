@@ -32,10 +32,8 @@ bot.on('message', message =>{
         message.channel.send(embed)   
 };
 });
-
-
-let ImageArray = JSON.parse(fs.readFileSync('meme.json', 'utf8'));
-console.log(ImageArray);
+var json = require('meme.json');
+array = JSON.parse(json);
 
 bot.on('message', message =>{
     if(message.content.startsWith(PREFIX + "aotmeme")){
@@ -62,7 +60,7 @@ bot.on('message', message =>{
         'https://i.kym-cdn.com/photos/images/newsfeed/000/586/078/d61.gif']
     */
         const embed = new Discord.RichEmbed()
-                    .setImage(ImageArray[random])
+                    .setImage(array[random])
                     .setFooter('Powered by pinco.il.mago')
                     .setTimestamp()
                     message.channel.send(embed)
