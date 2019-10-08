@@ -5,6 +5,7 @@ const PREFIX ='K!';
 var fs = require('fs');
 var commandlist = fs.readFileSync('Kanna Kamui Help.txt', 'utf8');
 var array=[];
+array = require("./meme.json");
 /*var meme = fs.readFileSync('meme.txt', 'utf8');*/
 function emoji (id) { return clientInformation.emojis.get(id).toString (); }
 
@@ -32,10 +33,6 @@ bot.on('message', message =>{
         message.channel.send(embed)   
 };
 });
-var xobj = new XMLHttpRequest();
-    xobj.overrideMimeType("application/json");
-    xobj.open('GET', 'meme.json', true);
-array= JSON.parse(json);
 
 bot.on('message', message =>{
     if(message.content.startsWith(PREFIX + "aotmeme")){
