@@ -32,8 +32,10 @@ bot.on('message', message =>{
         message.channel.send(embed)   
 };
 });
-var json = require('./meme.json');
-array = JSON.parse(json);
+var xobj = new XMLHttpRequest();
+    xobj.overrideMimeType("application/json");
+    xobj.open('GET', 'meme.json', true);
+array= JSON.parse(json);
 
 bot.on('message', message =>{
     if(message.content.startsWith(PREFIX + "aotmeme")){
