@@ -32,7 +32,7 @@ bot.on('message', message =>{
         message.channel.send(embed)   
 };
 });
-var json = require('meme.json');
+var json = require('./meme.json');
 array = JSON.parse(json);
 
 bot.on('message', message =>{
