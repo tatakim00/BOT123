@@ -59,7 +59,7 @@ bot.on('message', message =>{
         'https://i.kym-cdn.com/photos/images/newsfeed/000/586/078/d61.gif']
     */
         const embed = new Discord.RichEmbed()
-                    .setImage(array[random])
+                    .setImage(array.links[random])
                     .setFooter('Powered by pinco.il.mago')
                     .setTimestamp()
                     message.channel.send(embed)
