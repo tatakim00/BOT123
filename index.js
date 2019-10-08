@@ -33,9 +33,9 @@ bot.on('message', message =>{
 };
 });
 
-fs.readFile('meme.txt',(err, ImageArray) =>{
-    
-});
+
+let ImageArray = JSON.parse(fs.readFileSync('meme.json','utf8'));
+
 
 bot.on('message', message =>{
     if(message.content.startsWith(PREFIX + "aotmeme")){
