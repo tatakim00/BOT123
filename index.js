@@ -35,7 +35,7 @@ bot.on('message', message =>{
 
 let ImageArray = JSON.parse(fs.readFileSync('meme.json'));
 var Arraypath = './meme.json';
-var test = arr.loadFile(Arraypath);
+var test = loadFile(Arraypath);
 console.log(test);
 
 bot.on('message', message =>{
