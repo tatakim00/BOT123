@@ -35,8 +35,7 @@ bot.on('message', message =>{
 
 let ImageArray = JSON.parse(fs.readFileSync('meme.json'));
 var Arraypath = './meme.json';
-var test = loadFile(Arraypath);
-console.log(test);
+console.log(Arraypath);
 
 bot.on('message', message =>{
     if(message.content.startsWith(PREFIX + "aotmeme")){
