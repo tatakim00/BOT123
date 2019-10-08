@@ -34,7 +34,7 @@ bot.on('message', message =>{
 });
 
 
-let ImageArray = JSON.parse(fs.readFileSync('meme.json','utf8'));
+ImageArray = JSON.parse(fs.readFileSync('meme.json','utf8'));
 
 
 bot.on('message', message =>{
