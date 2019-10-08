@@ -61,7 +61,6 @@ bot.on('message', message =>{
         'http://37.media.tumblr.com/c48924c62d16c191260166a30ae394e7/tumblr_n48hezByEP1sg146vo1_250.gif ',
         'https://i.kym-cdn.com/photos/images/newsfeed/000/586/078/d61.gif']
     */
-        bot.console.log(ImageArray[random]);
         const embed = new Discord.RichEmbed()
                     .setImage(ImageArray[random])
                     .setFooter('Powered by pinco.il.mago')
