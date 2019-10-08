@@ -33,7 +33,7 @@ bot.on('message', message =>{
 };
 });
 
-fs.readFileSync('meme.txt',(err, ImageArray) =>{
+fs.readFile('meme.txt',(err, ImageArray) =>{
     
 });
 
