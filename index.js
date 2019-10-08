@@ -143,7 +143,7 @@ if(message.content.startsWith(PREFIX + "kiss")){
         message.channel.send(embed)
                 }
 if(message.content.startsWith(PREFIX + "tata")){
-    number = 53;
+    number = 14;
         var random = Math.floor (Math.random() * (number));
                     
         const embed = new Discord.RichEmbed()
