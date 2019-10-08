@@ -4,6 +4,7 @@ const PREFIX ='K!';
 
 var fs = require('fs');
 var commandlist = fs.readFileSync('Kanna Kamui Help.txt', 'utf8');
+var array=[];
 /*var meme = fs.readFileSync('meme.txt', 'utf8');*/
 function emoji (id) { return clientInformation.emojis.get(id).toString (); }
 
@@ -33,9 +34,8 @@ bot.on('message', message =>{
 });
 
 
-let ImageArray = JSON.parse(fs.readFileSync('meme.json'));
-var Arraypath = './meme.json';
-console.log(Arraypath);
+let ImageArray = JSON.parse(fs.readFileSync('meme.json', 'utf8'));
+console.log(ImageArray);
 
 bot.on('message', message =>{
     if(message.content.startsWith(PREFIX + "aotmeme")){
