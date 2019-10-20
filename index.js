@@ -182,12 +182,12 @@ number = 22;
             .setTimestamp()
             message.channel.send(embed)
          }
-         if(message.content.startsWith(PREFIX + "SMILE")){
+         if(message.content.startsWith(PREFIX + "smile")){
             number = 27;
               var random = Math.floor (Math.random() * (number));
                                                            
                const embed = new Discord.RichEmbed()
-                .setImage(array.SMILE[random])
+                .setImage(array.smile[random])
                 .setFooter('Powered by pinco.il.mago')
                 .setTimestamp()
                 message.channel.send(embed)
