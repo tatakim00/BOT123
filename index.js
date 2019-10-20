@@ -152,6 +152,46 @@ if(message.content.startsWith(PREFIX + "tata")){
                 .setTimestamp()
                 message.channel.send(embed)
                             }
+if(message.content.startsWith(PREFIX + "hug")){
+number = 22;
+  var random = Math.floor (Math.random() * (number));
+                                               
+   const embed = new Discord.RichEmbed()
+    .setImage(array.tata[random])
+    .setFooter('Powered by pinco.il.mago')
+    .setTimestamp()
+    message.channel.send(embed)
+ }
+ if(message.content.startsWith(PREFIX + "stare")){
+    number = 19;
+      var random = Math.floor (Math.random() * (number));
+                                                   
+       const embed = new Discord.RichEmbed()
+        .setImage(array.tata[random])
+        .setFooter('Powered by pinco.il.mago')
+        .setTimestamp()
+        message.channel.send(embed)
+     }
+     if(message.content.startsWith(PREFIX + "lick")){
+        number = 24;
+          var random = Math.floor (Math.random() * (number));
+                                                       
+           const embed = new Discord.RichEmbed()
+            .setImage(array.tata[random])
+            .setFooter('Powered by pinco.il.mago')
+            .setTimestamp()
+            message.channel.send(embed)
+         }
+         if(message.content.startsWith(PREFIX + "SMILE")){
+            number = 27;
+              var random = Math.floor (Math.random() * (number));
+                                                           
+               const embed = new Discord.RichEmbed()
+                .setImage(array.tata[random])
+                .setFooter('Powered by pinco.il.mago')
+                .setTimestamp()
+                message.channel.send(embed)
+             }
 });
 
 bot.login(process.env.BOT_TOKEN);
