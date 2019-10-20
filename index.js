@@ -157,7 +157,7 @@ number = 22;
   var random = Math.floor (Math.random() * (number));
                                                
    const embed = new Discord.RichEmbed()
-    .setImage(array.tata[random])
+    .setImage(array.hug[random])
     .setFooter('Powered by pinco.il.mago')
     .setTimestamp()
     message.channel.send(embed)
@@ -167,7 +167,7 @@ number = 22;
       var random = Math.floor (Math.random() * (number));
                                                    
        const embed = new Discord.RichEmbed()
-        .setImage(array.tata[random])
+        .setImage(array.stare[random])
         .setFooter('Powered by pinco.il.mago')
         .setTimestamp()
         message.channel.send(embed)
@@ -177,7 +177,7 @@ number = 22;
           var random = Math.floor (Math.random() * (number));
                                                        
            const embed = new Discord.RichEmbed()
-            .setImage(array.tata[random])
+            .setImage(array.lick[random])
             .setFooter('Powered by pinco.il.mago')
             .setTimestamp()
             message.channel.send(embed)
@@ -187,7 +187,7 @@ number = 22;
               var random = Math.floor (Math.random() * (number));
                                                            
                const embed = new Discord.RichEmbed()
-                .setImage(array.tata[random])
+                .setImage(array.SMILE[random])
                 .setFooter('Powered by pinco.il.mago')
                 .setTimestamp()
                 message.channel.send(embed)
