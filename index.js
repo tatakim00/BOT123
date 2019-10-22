@@ -192,6 +192,56 @@ number = 22;
                 .setTimestamp()
                 message.channel.send(embed)
              }
+             if(message.content.startsWith(PREFIX + "highfive")){
+                number = 21;
+                  var random = Math.floor (Math.random() * (number));
+                                                               
+                   const embed = new Discord.RichEmbed()
+                    .setImage(array.highfive[random])
+                    .setFooter('Powered by pinco.il.mago')
+                    .setTimestamp()
+                    message.channel.send(embed)
+                 }
+                 if(message.content.startsWith(PREFIX + "pat")){
+                    number = 53;
+                      var random = Math.floor (Math.random() * (number));
+                                                                   
+                       const embed = new Discord.RichEmbed()
+                        .setImage(array.pat[random])
+                        .setFooter('Powered by pinco.il.mago')
+                        .setTimestamp()
+                        message.channel.send(embed)
+                     }
+                     if(message.content.startsWith(PREFIX + "dance")){
+                        number = 38;
+                          var random = Math.floor (Math.random() * (number));
+                                                                       
+                           const embed = new Discord.RichEmbed()
+                            .setImage(array.dance[random])
+                            .setFooter('Powered by pinco.il.mago')
+                            .setTimestamp()
+                            message.channel.send(embed)
+                         }
+                         if(message.content.startsWith(PREFIX + "facepalm")){
+                            number = 19;
+                              var random = Math.floor (Math.random() * (number));
+                                                                           
+                               const embed = new Discord.RichEmbed()
+                                .setImage(array.facepalm[random])
+                                .setFooter('Powered by pinco.il.mago')
+                                .setTimestamp()
+                                message.channel.send(embed)
+                             }
+                             if(message.content.startsWith(PREFIX + "bite")){
+                                number = 26;
+                                  var random = Math.floor (Math.random() * (number));
+                                                                               
+                                   const embed = new Discord.RichEmbed()
+                                    .setImage(array.bite[random])
+                                    .setFooter('Powered by pinco.il.mago')
+                                    .setTimestamp()
+                                    message.channel.send(embed)
+                                 }
 });
 
 bot.login(process.env.BOT_TOKEN);
